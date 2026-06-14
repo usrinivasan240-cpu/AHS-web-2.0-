@@ -53,8 +53,9 @@ body {
 
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 img { max-width: 100%; display: block; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
-input, textarea, select { font-family: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; -webkit-tap-highlight-color: transparent; }
+input, textarea, select { font-family: inherit; -webkit-appearance: none; }
+a, button, input, textarea, select { touch-action: manipulation; }
 
 ::selection { background: rgba(0, 212, 255, 0.3); color: #fff; }
 ::-webkit-scrollbar { width: 8px; }
@@ -263,8 +264,12 @@ input, textarea, select { font-family: inherit; }
     display: none;
     flex-direction: column;
     gap: 5px;
-    padding: 4px;
+    padding: 8px;
     z-index: 10;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger span {
@@ -308,6 +313,10 @@ input, textarea, select { font-family: inherit; }
     font-weight: 600;
     color: var(--text-secondary);
     transition: var(--transition);
+    padding: 12px 24px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
 }
 
 .mobile-link:hover { color: var(--accent-blue); }
@@ -324,6 +333,7 @@ input, textarea, select { font-family: inherit; }
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    min-height: 44px;
 }
 
 .btn-primary {
@@ -2407,6 +2417,9 @@ input, textarea, select { font-family: inherit; }
 /* ========================================
    RESPONSIVE
    ======================================== */
+/* ========================================
+   RESPONSIVE - TABLET (max-width: 1024px)
+   ======================================== */
 @media (max-width: 1024px) {
     .hero-section { flex-direction: column; text-align: center; padding-top: 120px; }
     .hero-content { max-width: 100%; }
@@ -2421,47 +2434,169 @@ input, textarea, select { font-family: inherit; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
     .meeting-container { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
+    .comparison-table th, .comparison-table td { padding: 12px 14px; font-size: 0.8rem; }
 }
 
+/* ========================================
+   RESPONSIVE - MOBILE (max-width: 768px)
+   ======================================== */
 @media (max-width: 768px) {
+    /* Navigation */
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .btn-nav { display: none; }
-    .section { padding: 70px 0; }
-    .hero-title { font-size: 2rem; }
-    .hero-stats { flex-direction: column; gap: 20px; }
-    .stat-divider { width: 40px; height: 1px; }
+
+    /* Sections */
+    .section { padding: 60px 0; }
+    .section-header { margin-bottom: 40px; }
+    .container { padding: 0 16px; }
+
+    /* Hero */
+    .hero-section { padding-top: 100px; min-height: auto; gap: 30px; }
+    .hero-title { font-size: 1.8rem; }
+    .hero-description { font-size: 0.95rem; }
+    .hero-badge { font-size: 0.7rem; padding: 6px 14px; }
+    .hero-stats { flex-direction: row; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .stat-divider { display: none; }
+    .stat-item { min-width: 80px; }
+    .stat-number { font-size: 1.6rem; }
+    .stat-label { font-size: 0.7rem; }
+    .hero-graphic { width: 220px; height: 220px; }
+
+    /* Nervous System */
+    .nervous-system-visual { width: 320px; height: 320px; margin-bottom: 40px; }
+    .ns-core-inner { width: 90px; height: 90px; font-size: 1.5rem; }
+    .ns-core { width: 100px; height: 100px; }
+    .ns-pulse { width: 90px; height: 90px; }
+    .ns-node-icon { width: 48px; height: 48px; font-size: 1.1rem; }
+    .ns-node span { font-size: 0.65rem; }
+    .ns-tooltip { display: none; }
+    .ring-1 { width: 120px; height: 120px; }
+    .ring-2 { width: 200px; height: 200px; }
+    .ring-3 { width: 280px; height: 280px; }
+
+    /* Services */
     .services-grid { grid-template-columns: 1fr; }
-    .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .service-card { padding: 24px; }
+
+    /* Industries */
+    .industries-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .industry-card { padding: 20px; }
+    .industry-icon { width: 48px; height: 48px; font-size: 1.2rem; }
+
+    /* AI Showcase */
     .ai-showcase-grid { grid-template-columns: 1fr; }
-    .portfolio-grid { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: 1fr; }
-    .testimonials-slider { grid-template-columns: 1fr; }
-    .ns-features { grid-template-columns: 1fr; }
-    .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
-    .infra-grid { grid-template-columns: repeat(2, 1fr); }
-    .care-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
-    .core-offering { flex-direction: column; align-items: center; gap: 20px; }
-    .form-row { grid-template-columns: 1fr; }
-    .checkbox-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-grid { grid-template-columns: 1fr; }
+
+    /* Method */
     .method-step { flex-direction: column; align-items: flex-start; gap: 16px; }
     .method-line { display: none; }
-    .ai-widget-chat { width: calc(100vw - 48px); right: -12px; }
-    .hero-graphic { width: 260px; height: 260px; }
-    .nervous-system-visual { width: 380px; height: 380px; }
-    .ring-1 { width: 140px; height: 140px; }
-    .ring-2 { width: 240px; height: 240px; }
-    .ring-3 { width: 320px; height: 320px; }
-    .ns-tooltip { display: none; }
+    .method-card { padding: 24px; }
+    .method-list { grid-template-columns: 1fr; }
+
+    /* Pricing */
+    .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+    .pricing-header { padding: 24px 20px 16px; }
+    .pricing-body { padding: 20px; }
+    .pricing-features li { font-size: 0.8rem; }
+    .table-responsive { margin: 0 -16px; border-radius: 0; }
+    .comparison-table th, .comparison-table td { padding: 10px 12px; font-size: 0.75rem; }
+    .comparison-table th:first-child, .comparison-table td:first-child { min-width: 120px; }
+
+    /* Portfolio */
+    .portfolio-grid { grid-template-columns: 1fr; }
+
+    /* Why AHS */
+    .why-grid { grid-template-columns: 1fr; }
+
+    /* Infra */
+    .infra-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .infra-card { padding: 16px; }
+
+    /* Care Plans */
+    .care-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+
+    /* Core Offering */
+    .core-offering { flex-direction: column; align-items: center; gap: 20px; }
+
+    /* Testimonials */
+    .testimonials-slider { grid-template-columns: 1fr; }
+
+    /* NS Features */
+    .ns-features { grid-template-columns: 1fr; }
+
+    /* Forms */
+    .form-row { grid-template-columns: 1fr; }
+    .checkbox-grid { grid-template-columns: repeat(2, 1fr); }
+    .audit-form-wrapper, .meeting-form-wrapper, .contact-form-wrapper { padding: 20px; }
+
+    /* Meeting */
+    .meeting-container { grid-template-columns: 1fr; }
+
+    /* Contact */
+    .contact-grid { grid-template-columns: 1fr; }
+    .ci-card { padding: 16px; }
+
+    /* Footer */
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer { padding: 40px 0 0; }
+
+    /* AI Widget */
+    .ai-widget-chat { width: calc(100vw - 32px); right: -8px; bottom: 68px; height: 420px; }
+
+    /* WhatsApp */
+    .whatsapp-btn { width: 50px; height: 50px; font-size: 1.4rem; bottom: 16px; left: 16px; }
 }
 
+/* ========================================
+   RESPONSIVE - SMALL MOBILE (max-width: 480px)
+   ======================================== */
 @media (max-width: 480px) {
-    .hero-title { font-size: 1.6rem; }
-    .section-title { font-size: 1.6rem; }
-    .hero-actions { flex-direction: column; }
-    .hero-actions .btn { width: 100%; justify-content: center; }
+    .section { padding: 50px 0; }
+    .hero-title { font-size: 1.5rem; }
+    .hero-description { font-size: 0.88rem; }
+    .section-title { font-size: 1.5rem; }
+    .section-subtitle { font-size: 0.9rem; }
+
+    .hero-actions { flex-direction: column; width: 100%; }
+    .hero-actions .btn { width: 100%; justify-content: center; padding: 14px 24px; }
+
+    .hero-stats { gap: 12px; }
+    .stat-number { font-size: 1.4rem; }
+
     .industries-grid { grid-template-columns: 1fr; }
+    .infra-grid { grid-template-columns: 1fr; }
     .checkbox-grid { grid-template-columns: 1fr; }
-    .audit-form-wrapper, .meeting-form-wrapper, .contact-form-wrapper { padding: 24px; }
+
+    .audit-form-wrapper, .meeting-form-wrapper, .contact-form-wrapper { padding: 16px; }
+    .form-group input, .form-group textarea, .form-group select { padding: 12px 14px; font-size: 0.88rem; }
+
+    .pricing-card .btn { margin: auto 16px 16px; width: calc(100% - 32px); }
+
+    .ai-widget-chat { width: calc(100vw - 16px); right: -4px; height: 380px; }
+
+    .comparison-table th, .comparison-table td { padding: 8px 8px; font-size: 0.7rem; }
+    .tbl-check, .tbl-x { width: 22px; height: 22px; font-size: 0.6rem; }
+    .support-badge { padding: 3px 8px; font-size: 0.65rem; }
+
+    .care-price { font-size: 2rem; }
+
+    .hero-graphic { width: 180px; height: 180px; }
+    .center-node { width: 60px; height: 60px; font-size: 1.5rem; }
+}
+
+/* ========================================
+   SAFARI/IOS FIXES
+   ======================================== */
+@supports (-webkit-touch-callout: none) {
+    .hero-section { min-height: -webkit-fill-available; }
+    .section { padding: 50px 0; }
+}
+
+/* ========================================
+   LANDSCAPE MOBILE
+   ======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section { padding-top: 80px; }
+    .hero-graphic { width: 180px; height: 180px; }
+    .nervous-system-visual { width: 280px; height: 280px; }
 }
