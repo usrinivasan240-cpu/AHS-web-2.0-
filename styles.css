@@ -622,6 +622,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
     margin: 0 auto 60px;
     flex-shrink: 0;
     max-width: 100%;
+    overflow: visible;
 }
 
 .ns-center {
@@ -2465,8 +2466,16 @@ a, button, input, textarea, select { touch-action: manipulation; }
     .hero-graphic { width: 220px; height: 220px; }
 
     /* Nervous System */
-    .nervous-system-visual { width: 520px; height: 520px; margin: 0 auto 40px; transform: scale(0.65); transform-origin: top center; }
+    .nervous-system-visual { width: 100%; max-width: 340px; height: auto; aspect-ratio: 1; margin: 0 auto 40px; }
+    .ns-core-inner { width: 80px; height: 80px; font-size: 1.4rem; }
+    .ns-core { width: 90px; height: 90px; }
+    .ns-pulse { width: 80px; height: 80px; }
+    .ns-node-icon { width: 46px; height: 46px; font-size: 1rem; }
+    .ns-node span { font-size: 0.6rem; }
     .ns-tooltip { display: none; }
+    .ring-1 { width: 120px; height: 120px; }
+    .ring-2 { width: 210px; height: 210px; }
+    .ring-3 { width: 300px; height: 300px; }
 
     /* Services */
     .services-grid { grid-template-columns: 1fr; }
@@ -2575,7 +2584,15 @@ a, button, input, textarea, select { touch-action: manipulation; }
 
     .hero-graphic { width: 180px; height: 180px; }
     .center-node { width: 60px; height: 60px; font-size: 1.5rem; }
-    .nervous-system-visual { transform: scale(0.55); margin-bottom: 20px; }
+    .nervous-system-visual { max-width: 280px; margin-bottom: 20px; }
+    .ns-core-inner { width: 68px; height: 68px; font-size: 1.2rem; }
+    .ns-core { width: 78px; height: 78px; }
+    .ns-pulse { width: 68px; height: 68px; }
+    .ns-node-icon { width: 40px; height: 40px; font-size: 0.9rem; }
+    .ns-node span { font-size: 0.55rem; }
+    .ring-1 { width: 100px; height: 100px; }
+    .ring-2 { width: 175px; height: 175px; }
+    .ring-3 { width: 250px; height: 250px; }
 }
 
 /* ========================================
