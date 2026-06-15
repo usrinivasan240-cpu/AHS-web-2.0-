@@ -627,11 +627,8 @@ a, button, input, textarea, select { touch-action: manipulation; }
 
 .ns-center {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -693,6 +690,8 @@ a, button, input, textarea, select { touch-action: manipulation; }
 .ns-pulse {
     position: absolute;
     width: 120px; height: 120px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 50%;
     border: 1.5px solid rgba(0, 245, 255, 0.4);
     animation: ns-pulse-anim 2.5s ease-out infinite;
@@ -701,8 +700,8 @@ a, button, input, textarea, select { touch-action: manipulation; }
 .ns-pulse-2 { animation-delay: 1.25s; }
 
 @keyframes ns-pulse-anim {
-    0% { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(2.8); opacity: 0; }
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+    100% { transform: translate(-50%, -50%) scale(2.8); opacity: 0; }
 }
 
 .ns-nodes {
