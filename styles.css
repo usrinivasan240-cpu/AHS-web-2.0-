@@ -794,6 +794,10 @@ a, button, input, textarea, select { touch-action: manipulation; }
     line-height: 1.6;
 }
 
+#nervous-system {
+    padding: 80px 0 40px;
+}
+
 #nervous-system .container {
     display: flex;
     flex-direction: column;
