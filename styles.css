@@ -650,6 +650,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     font-size: 2rem;
     color: #000;
     position: relative;
@@ -683,8 +684,8 @@ a, button, input, textarea, select { touch-action: manipulation; }
     font-family: var(--font-display);
     font-size: 0.65rem;
     font-weight: 700;
-    margin-top: 4px;
     letter-spacing: 1px;
+    line-height: 1;
 }
 
 .ns-pulse {
