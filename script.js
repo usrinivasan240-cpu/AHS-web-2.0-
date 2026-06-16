@@ -338,27 +338,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         createActivityLog('Lead Created', data.name + ' (' + data.company + ') submitted an AI audit request', 'lead');
                     }
 
-                } else if (formId === 'meeting-form') {
-                    const meetingData = {
-                        id: genId(),
-                        name: data.name || '',
-                        email: data.email || '',
-                        phone: data.phone || '',
-                        preferredDate: data.date || '',
-                        preferredTime: data.time || '',
-                        topic: data.topic || '',
-                        status: 'pending',
-                        source: 'website',
-                        createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-                        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-                    };
-
-                    const docRef = await saveToFirestore('meetings', meetingData);
-                    if (docRef) {
-                        createNotification('New Consultation Request', 'Meeting requested by ' + (data.name || 'Unknown') + ' for ' + (data.date || 'TBD') + ' at ' + (data.time || 'TBD'), 'Meeting', docRef.id, 'high');
-                        createActivityLog('Meeting Booked', data.name + ' booked a consultation for ' + (data.date || 'TBD'), 'meeting');
-                    }
-
                 } else if (formId === 'contact-form') {
                     const leadData = {
                         id: genId(),
@@ -404,15 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     handleFormSubmit('audit-form', 'Audit request submitted! We\'ll contact you within 24 hours.');
-    handleFormSubmit('meeting-form', 'Meeting booked! Check your email for confirmation.');
     handleFormSubmit('contact-form', 'Message sent! We\'ll get back to you soon.');
-
-    // Set minimum date for meeting form
-    const meetDate = document.getElementById('meet-date');
-    if (meetDate) {
-        const today = new Date().toISOString().split('T')[0];
-        meetDate.setAttribute('min', today);
-    }
 
     // === Toast Notification ===
     function showToast(msg) {
@@ -460,15 +431,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const aiResponses = {
         'services': 'We offer AI & Automation, Software Development, Web Development, Mobile Apps, API Integration, UI/UX Design, Cloud Solutions, Business Solutions, and 24/7 Support. Which one interests you?',
-        'meeting': 'Great! You can book a free 30-minute strategy call at <a href="#meeting" style="color:#00d4ff;text-decoration:underline;">our meeting page</a>. Pick a time that works for you!',
+        'meeting': 'Great! You can book a free 30-minute strategy call at <a href="#booking" style="color:#00d4ff;text-decoration:underline;">our booking page</a>. Pick a time that works for you!',
         'pricing': 'Our pricing is project-based and tailored to your needs. For an accurate quote, fill out our <a href="#audit" style="color:#00d4ff;text-decoration:underline;">AI Audit form</a> or book a free consultation.',
         'ai': 'Our AI solutions include intelligent chatbots, predictive analytics, process automation, computer vision, and custom ML models. Want a free AI audit for your business?',
         'contact': 'You can reach us at:<br>Phone: <a href="tel:+919940918442" style="color:#00d4ff">+91 9940918442</a><br>Email: <a href="mailto:usrinivasan240@gmail.com" style="color:#00d4ff">usrinivasan240@gmail.com</a><br>Location: Trichy, Tamil Nadu',
         'location': 'We\'re based in Trichy, Tamil Nadu, India. We serve clients globally across multiple industries.',
-        'hello': 'Hello! Welcome to AHS. How can I help you today? I can tell you about our services, help book a meeting, or answer any questions.',
+        'hello': 'Hello! Welcome to AHS. How can I help you today? I can tell you about our services, help book a strategy call, or answer any questions.',
         'hi': 'Hi there! I\'m the AHS AI Assistant. How can I assist you today?',
         'audit': 'Our free AI Audit analyzes your current systems and identifies automation opportunities. Fill out the form at <a href="#audit" style="color:#00d4ff;text-decoration:underline;">our audit page</a> to get started!',
-        'default': 'Thanks for your interest! I can help with information about our services, pricing, or booking a meeting. You can also reach us directly at +91 9940918442 or usrinivasan240@gmail.com.'
+        'default': 'Thanks for your interest! I can help with information about our services, pricing, or booking a strategy call. You can also reach us directly at +91 9940918442 or usrinivasan240@gmail.com.'
     };
 
     function getAIResponse(input) {
