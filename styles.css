@@ -2461,7 +2461,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
 
     /* Nervous System */
     .nervous-system-visual { width: 100%; max-width: 340px; height: auto; aspect-ratio: 1; margin: 0 auto 40px; }
-    .ns-core-inner { width: 80px; height: 80px; font-size: 1.4rem; gap: 4px; }
+    .ns-core-inner { width: 80px; height: 80px; font-size: 1.4rem; gap: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; white-space: nowrap; }
     .ns-core { width: 90px; height: 90px; }
     .ns-pulse { width: 80px; height: 80px; }
     .ns-node-icon { width: 46px; height: 46px; font-size: 1rem; }
@@ -2579,7 +2579,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
     .hero-graphic { width: 180px; height: 180px; }
     .center-node { width: 60px; height: 60px; font-size: 1.5rem; }
     .nervous-system-visual { max-width: 280px; margin-bottom: 20px; }
-    .ns-core-inner { width: 68px; height: 68px; font-size: 1.2rem; gap: 3px; }
+    .ns-core-inner { width: 68px; height: 68px; font-size: 1.2rem; gap: 3px; display: flex; flex-direction: column; align-items: center; justify-content: center; white-space: nowrap; }
     .ns-core { width: 78px; height: 78px; }
     .ns-pulse { width: 68px; height: 68px; }
     .ns-node-icon { width: 40px; height: 40px; font-size: 0.9rem; }
