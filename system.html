@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AHS Digital Nervous System - Our integrated platform acts as the neural backbone of your business.">
+    <meta name="keywords" content="AI system architecture, nervous system, automation backbone, AHS">
+    <meta name="author" content="Auto Hub Solution">
+    <meta property="og:title" content="AHS | System Architecture">
+    <meta property="og:description" content="Our integrated platform acts as the neural backbone of your business.">
+    <meta property="og:type" content="website">
+    <title>AHS | System Architecture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="neural-canvas"></canvas>
+    <div id="particles-container"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-text">
+                <span class="loader-brand">AHS</span>
+                <span class="loader-sub">INITIALIZING SYSTEMS</span>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" class="logo-svg">
+                        <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+                        <text x="20" y="24" text-anchor="middle" fill="url(#logoGrad)" font-family="Orbitron" font-size="12" font-weight="700">AHS</text>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d4ff"/>
+                                <stop offset="100%" style="stop-color:#00ff88"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">AHS</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="system.html" class="nav-link active">System</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="audit.html" class="nav-link">Audit</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-primary btn-nav">Book Strategy Call</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="system.html" class="mobile-link">System</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="portfolio.html" class="mobile-link">Portfolio</a>
+            <a href="audit.html" class="mobile-link">Audit</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;text-align:center;">Book Strategy Call</a>
+        </div>
+    </div>
+
+    <!-- AHS Method -->
+    <section id="method" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">OUR METHODOLOGY</span>
+                <h2 class="section-title">The AHS <span class="gradient-text">Method</span></h2>
+                <p class="section-subtitle">A battle-tested framework that transforms businesses through three powerful phases.</p>
+            </div>
+            <div class="method-timeline">
+                <div class="method-line"></div>
+                <div class="method-step reveal-up">
+                    <div class="method-step-number">
+                        <span class="step-num">01</span>
+                        <div class="step-ring"></div>
+                    </div>
+                    <div class="method-card glass-card">
+                        <div class="method-icon accelerate-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>ACCELERATE</h3>
+                        <p class="method-tagline">Launch Faster Than Ever</p>
+                        <p>We audit your current systems, identify bottlenecks, and deploy AI-powered solutions that compress months of work into days. Our rapid deployment framework gets you market-ready at light speed.</p>
+                        <ul class="method-list">
+                            <li><i class="fas fa-check"></i> System &amp; Process Audit</li>
+                            <li><i class="fas fa-check"></i> AI Strategy Blueprint</li>
+                            <li><i class="fas fa-check"></i> Rapid Prototyping</li>
+                            <li><i class="fas fa-check"></i> Quick-Win Implementation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="method-step reveal-up">
+                    <div class="method-step-number">
+                        <span class="step-num">02</span>
+                        <div class="step-ring"></div>
+                    </div>
+                    <div class="method-card glass-card">
+                        <div class="method-icon harmonize-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>HARMONIZE</h3>
+                        <p class="method-tagline">Unify Your Ecosystem</p>
+                        <p>We connect every tool, platform, and data source into a seamless ecosystem. Our integration mesh ensures your entire tech stack works as one intelligent organism.</p>
+                        <ul class="method-list">
+                            <li><i class="fas fa-check"></i> System Integration</li>
+                            <li><i class="fas fa-check"></i> Data Unification</li>
+                            <li><i class="fas fa-check"></i> Workflow Orchestration</li>
+                            <li><i class="fas fa-check"></i> Cross-Platform Sync</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="method-step reveal-up">
+                    <div class="method-step-number">
+                        <span class="step-num">03</span>
+                        <div class="step-ring"></div>
+                    </div>
+                    <div class="method-card glass-card">
+                        <div class="method-icon scale-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>SCALE</h3>
+                        <p class="method-tagline">Grow Without Limits</p>
+                        <p>With foundations solid and systems unified, we deploy intelligent automation that scales your operations exponentially while keeping costs linear.</p>
+                        <ul class="method-list">
+                            <li><i class="fas fa-check"></i> AI-Driven Automation</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check"></i> Growth Analytics</li>
+                            <li><i class="fas fa-check"></i> Continuous Evolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Solutions Showcase -->
+    <section id="ai-showcase" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">AI IN ACTION</span>
+                <h2 class="section-title">AI Solutions <span class="gradient-text">Showcase</span></h2>
+                <p class="section-subtitle">See how our AI transforms businesses across industries.</p>
+            </div>
+            <div class="ai-showcase-grid">
+                <div class="ai-showcase-card glass-card reveal-up">
+                    <div class="ai-sc-visual">
+                        <div class="ai-sc-animation chatbot-anim">
+                            <div class="chat-bubble bot"><span>How can I help you?</span></div>
+                            <div class="chat-bubble user"><span>I need order status</span></div>
+                            <div class="chat-bubble bot"><span>Order #4821 is arriving tomorrow!</span></div>
+                        </div>
+                    </div>
+                    <h3>Intelligent Chatbots</h3>
+                    <p>24/7 AI-powered customer support that understands context, sentiment, and intent.</p>
+                </div>
+                <div class="ai-showcase-card glass-card reveal-up">
+                    <div class="ai-sc-visual">
+                        <div class="ai-sc-animation data-anim">
+                            <div class="data-bar" style="--h:60%"></div>
+                            <div class="data-bar" style="--h:80%"></div>
+                            <div class="data-bar" style="--h:45%"></div>
+                            <div class="data-bar" style="--h:90%"></div>
+                            <div class="data-bar" style="--h:70%"></div>
+                            <div class="data-bar" style="--h:55%"></div>
+                            <div class="data-bar" style="--h:85%"></div>
+                        </div>
+                    </div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Data-driven forecasting that turns historical patterns into future advantages.</p>
+                </div>
+                <div class="ai-showcase-card glass-card reveal-up">
+                    <div class="ai-sc-visual">
+                        <div class="ai-sc-animation process-anim">
+                            <div class="process-node">Input</div>
+                            <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="process-node process-ai">AI</div>
+                            <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="process-node">Output</div>
+                        </div>
+                    </div>
+                    <h3>Process Automation</h3>
+                    <p>End-to-end workflow automation that eliminates manual bottlenecks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 40 40" width="40" height="40">
+                            <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#fLogoGrad)" stroke-width="2"/>
+                            <text x="20" y="24" text-anchor="middle" fill="url(#fLogoGrad)" font-family="Orbitron" font-size="12" font-weight="700">AHS</text>
+                            <defs><linearGradient id="fLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00d4ff"/><stop offset="100%" style="stop-color:#00ff88"/></linearGradient></defs>
+                        </svg>
+                        <span>AHS</span>
+                    </div>
+                    <p>Transforming Ideas Into Intelligent Growth Systems. MSME-registered AI and software solutions company based in Trichy, Tamil Nadu.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/autohub_solution777?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="services.html">AI &amp; Automation</a>
+                    <a href="services.html">Software Development</a>
+                    <a href="services.html">Web Development</a>
+                    <a href="services.html">Mobile Apps</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="system.html">Our Method</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="index.html#why-ahs">Why AHS</a>
+                    <a href="index.html#testimonials">Testimonials</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="tel:+919940918442"><i class="fas fa-phone-alt"></i> +91 9940918442</a>
+                    <a href="mailto:usrinivasan240@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Trichy, TN</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&amp;copy; 2026 Auto Hub Solution (AHS). All rights reserved. MSME Registered.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919940918442?text=Hi%20AHS%2C%20I%27m%20interested%20in%20your%20AI%20solutions." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="ai-widget" id="ai-widget">
+        <button class="ai-widget-btn" id="ai-widget-btn" aria-label="AI Assistant">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="ai-widget-chat" id="ai-widget-chat">
+            <div class="aiw-header">
+                <div class="aiw-header-info">
+                    <i class="fas fa-robot"></i>
+                    <span>AHS AI Assistant</span>
+                </div>
+                <button class="aiw-close" id="aiw-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="aiw-messages" id="aiw-messages">
+                <div class="aiw-msg bot">
+                    <p>Hi! I'm the AHS AI Assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="aiw-quick-actions">
+                <button class="aiw-quick" data-msg="Tell me about your services">Our Services</button>
+                <button class="aiw-quick" data-msg="I want to book a strategy call">Book Strategy Call</button>
+                <button class="aiw-quick" data-msg="What are your prices?">Pricing</button>
+                <button class="aiw-quick" data-msg="I need AI automation">AI Solutions</button>
+            </div>
+            <div class="aiw-input-area">
+                <input type="text" id="aiw-input" placeholder="Type your message..." autocomplete="off">
+                <button id="aiw-send" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js"></script>
+    <script src="env-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
