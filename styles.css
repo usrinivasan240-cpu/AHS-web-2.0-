@@ -2042,14 +2042,16 @@ a, button, input, textarea, select { touch-action: manipulation; }
 .checkbox-label {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     font-size: 0.82rem;
     color: var(--text-secondary);
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 12px 14px;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-subtle);
     transition: var(--transition);
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .checkbox-label:hover {
@@ -2058,8 +2060,47 @@ a, button, input, textarea, select { touch-action: manipulation; }
 }
 
 .checkbox-label input[type="checkbox"] {
-    width: 16px; height: 16px;
-    accent-color: var(--accent-blue);
+    display: none;
+}
+
+.checkbox-label .check-box {
+    width: 20px; height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--border-subtle);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.checkbox-label .check-box i {
+    font-size: 0.65rem;
+    color: #000;
+    opacity: 0;
+    transform: scale(0);
+    transition: var(--transition);
+}
+
+.checkbox-label:hover .check-box {
+    border-color: var(--accent-blue);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .check-box {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .check-box i {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.checkbox-label:has(input:checked) {
+    border-color: var(--accent-blue);
+    background: rgba(0, 212, 255, 0.08);
+    color: var(--text-primary);
 }
 
 .form-note {
