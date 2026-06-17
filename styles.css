@@ -963,6 +963,135 @@ a, button, input, textarea, select { touch-action: manipulation; }
 .method-list i { color: var(--accent-green); font-size: 0.75rem; }
 
 /* ========================================
+   SERVICE PACKAGES SECTION
+   ======================================== */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.package-card {
+    padding: 32px 28px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.package-card:hover::before { opacity: 1; }
+
+.package-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--accent-green);
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.enterprise-badge {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+    color: #fff;
+}
+
+.package-icon {
+    width: 64px; height: 64px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    transition: var(--transition);
+}
+
+.package-card:hover .package-icon {
+    transform: scale(1.1);
+}
+
+.package-card h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.package-tagline {
+    font-size: 0.82rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.package-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.package-features li {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.package-features i { color: var(--accent-green); font-size: 0.7rem; }
+
+.package-price {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    margin-top: auto;
+}
+
+.package-price .gradient-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.package-card .btn {
+    width: 100%;
+}
+
+.package-popular {
+    border-color: rgba(0, 255, 136, 0.3);
+}
+
+.package-enterprise {
+    border-color: rgba(0, 212, 255, 0.3);
+}
+
+/* ========================================
    SERVICES SECTION
    ======================================== */
 .services-grid {
@@ -2383,6 +2512,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
     .hero-actions { justify-content: center; }
     .hero-stats { justify-content: center; }
     .hero-visual { margin-top: 40px; }
+    .packages-grid { grid-template-columns: repeat(2, 1fr); }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .industries-grid { grid-template-columns: repeat(3, 1fr); }
     .pricing-grid { grid-template-columns: repeat(2, 1fr); }
@@ -2432,6 +2562,7 @@ a, button, input, textarea, select { touch-action: manipulation; }
     .ring-3 { width: 300px; height: 300px; }
 
     /* Services */
+    .packages-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
     .services-grid { grid-template-columns: 1fr; }
     .service-card { padding: 24px; }
 
