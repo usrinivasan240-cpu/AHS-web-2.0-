@@ -1796,6 +1796,86 @@ a, button, input, textarea, select { touch-action: manipulation; }
 .support-premium { background: rgba(139, 92, 246, 0.1); color: var(--accent-purple); border: 1px solid rgba(139, 92, 246, 0.2); }
 .support-enterprise { background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(139, 92, 246, 0.1)); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
 
+/* Price Column */
+.tbl-price {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.free-price {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+/* Care Plan Icons */
+.care-icon {
+    width: 52px; height: 52px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Payment Terms */
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.payment-card {
+    padding: 32px;
+    text-align: center;
+}
+
+.payment-icon {
+    width: 56px; height: 56px;
+    margin: 0 auto 16px;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+}
+
+.payment-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.payment-terms {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.payment-terms li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.payment-terms i { color: var(--accent-green); font-size: 0.75rem; }
+
 /* Infrastructure Cards */
 .infra-grid {
     display: grid;
@@ -2639,6 +2719,9 @@ a, button, input, textarea, select { touch-action: manipulation; }
     /* Infra */
     .infra-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .infra-card { padding: 16px; }
+
+    /* Payment */
+    .payment-grid { grid-template-columns: 1fr; }
 
     /* Care Plans */
     .care-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
