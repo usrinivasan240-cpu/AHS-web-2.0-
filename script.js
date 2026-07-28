@@ -494,8 +494,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === Currency Toggle (USD / INR) ===
-    let isINR = localStorage.getItem('ahs-currency') === 'inr';
+    // === Currency Toggle (INR / USD) ===
+    let isINR = localStorage.getItem('ahs-currency') !== 'usd';
 
     const currencyToggle = document.getElementById('currency-toggle');
     const labelUSD = document.getElementById('currency-label-usd');
@@ -509,19 +509,34 @@ document.addEventListener('DOMContentLoaded', () => {
             el.textContent = symbol;
         });
 
-        // Update table prices - just swap symbol
+        // Update table prices - swap symbol and number
         document.querySelectorAll('.tbl-price[data-usd]').forEach(el => {
             const usd = parseInt(el.dataset.usd);
-            el.textContent = symbol + usd.toLocaleString();
+            if (isINR) {
+                el.textContent = el.getAttribute('data-inr') || '₹' + usd.toLocaleString();
+            } else {
+                el.textContent = '$' + usd.toLocaleString();
+            }
         });
 
-        // Update care plan prices (numbers stay same)
-        // No change needed - numbers are already in HTML
+        // Update care plan prices
+        document.querySelectorAll('.care-price span[data-usd]').forEach(el => {
+            const usd = parseInt(el.dataset.usd);
+            if (isINR) {
+                el.textContent = el.getAttribute('data-inr') || usd.toLocaleString();
+            } else {
+                el.textContent = usd;
+            }
+        });
 
-        // Update payment threshold - just swap symbol
+        // Update payment threshold
         document.querySelectorAll('.payment-threshold[data-usd]').forEach(el => {
             const usd = parseInt(el.dataset.usd);
-            el.textContent = symbol + usd.toLocaleString();
+            if (isINR) {
+                el.textContent = el.getAttribute('data-inr') || '₹' + usd.toLocaleString();
+            } else {
+                el.textContent = '$' + usd.toLocaleString();
+            }
         });
 
         // Update toggle and labels
