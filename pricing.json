@@ -1,0 +1,207 @@
+{
+  "membershipPlans": [
+    {
+      "name": "AHS Accelerate",
+      "price": "₹9,999",
+      "period": "one-time",
+      "description": "Perfect for startups and small businesses looking to establish a professional digital presence with essential tools and support.",
+      "features": [
+        "5-Page Professional Website",
+        "Basic SEO Setup",
+        "Mobile Responsive Design",
+        "Contact Form Integration",
+        "Social Media Integration",
+        "1 Month Post-Launch Support",
+        "Basic Analytics Setup",
+        "SSL Certificate Included"
+      ],
+      "cta": "Get Started",
+      "popular": false,
+      "gradient": "from-blue-500 to-cyan-400"
+    },
+    {
+      "name": "AHS Harmonize",
+      "price": "₹24,999",
+      "period": "one-time",
+      "description": "Ideal for growing businesses needing a comprehensive digital ecosystem with advanced features and automation.",
+      "features": [
+        "10-Page Dynamic Website",
+        "Advanced SEO & Analytics",
+        "CMS Integration",
+        "E-commerce Functionality",
+        "Custom Admin Panel",
+        "Payment Gateway Integration",
+        "Email Marketing Setup",
+        "Social Media Automation",
+        "3 Months Maintenance",
+        "Priority Support"
+      ],
+      "cta": "Get Started",
+      "popular": true,
+      "gradient": "from-violet-500 to-purple-500"
+    },
+    {
+      "name": "AHS Scale",
+      "price": "₹49,999",
+      "period": "one-time",
+      "description": "For established businesses ready to scale with custom applications, AI integration, and dedicated support.",
+      "features": [
+        "Custom Web Application",
+        "Mobile Responsive + PWA",
+        "Advanced AI Integration",
+        "Custom CRM Integration",
+        "Workflow Automation",
+        "Full Analytics Dashboard",
+        "Multi-language Support",
+        "API Development & Integration",
+        "6 Months Maintenance",
+        "Dedicated Project Manager",
+        "24/7 Support"
+      ],
+      "cta": "Get Started",
+      "popular": false,
+      "gradient": "from-amber-500 to-orange-500"
+    },
+    {
+      "name": "AHS Intelligent Scale",
+      "price": "₹99,999+",
+      "period": "custom",
+      "description": "Enterprise-grade solutions built for market leaders. Fully custom development with cutting-edge AI and automation.",
+      "features": [
+        "Full-Stack Custom Platform",
+        "Native Mobile Apps (iOS & Android)",
+        "Enterprise AI & Automation Suite",
+        "Custom ERP/CRM Integration",
+        "Scalable Cloud Infrastructure",
+        "Advanced Security & Compliance",
+        "Dedicated Development Team",
+        "12 Months Premium Support",
+        "Strategic Technology Consulting",
+        "Unlimited Revisions",
+        "SLA Guarantees",
+        "Ongoing Innovation Partnership"
+      ],
+      "cta": "Contact Sales",
+      "popular": false,
+      "gradient": "from-rose-500 to-pink-500"
+    }
+  ],
+  "serviceCatalog": [
+    {
+      "service": "Web Development",
+      "plans": [
+        { "name": "Basic Website", "price": "₹ 24,999", "description": "5-page responsive website with essential features and contact form integration." },
+        { "name": "Standard Website", "price": "₹ 49,999", "description": "10-page CMS-powered website with blog system and advanced SEO setup." },
+        { "name": "Premium Website", "price": "₹ 99,999", "description": "Custom web application with admin panel and third-party integrations." },
+        { "name": "Enterprise Web Platform", "price": "₹ 1,99,999+", "description": "Scalable enterprise platform with full API ecosystem and dedicated support." }
+      ]
+    },
+    {
+      "service": "Mobile App Development",
+      "plans": [
+        { "name": "Basic App", "price": "₹ 49,999", "description": "Single-platform mobile app with core functionality and clean UI design." },
+        { "name": "Standard App", "price": "₹ 99,999", "description": "Cross-platform app with API integration, push notifications, and analytics." },
+        { "name": "Premium App", "price": "₹ 1,99,999", "description": "Full-featured native app with real-time backend and advanced features." },
+        { "name": "SaaS / Enterprise App", "price": "₹ 3,99,999+", "description": "Enterprise-grade scalable mobile platform with multi-tenant architecture." }
+      ]
+    },
+    {
+      "service": "AI & Automation",
+      "plans": [
+        { "name": "AI Chatbot", "price": "₹ 25,000+", "description": "Intelligent chatbot for automated customer engagement and support." },
+        { "name": "AI Lead Qualification System", "price": "₹ 35,000+", "description": "Automated lead scoring and qualification powered by machine learning." },
+        { "name": "AI Assistant", "price": "₹ 45,000+", "description": "Virtual AI assistant to streamline business operations and tasks." },
+        { "name": "Workflow Automation", "price": "₹ 35,000+", "description": "Automate repetitive business processes and reduce manual effort." },
+        { "name": "CRM Automation", "price": "₹ 50,000+", "description": "End-to-end CRM workflow automation for sales and marketing teams." },
+        { "name": "WhatsApp Automation", "price": "₹ 30,000+", "description": "Automated WhatsApp marketing, notifications, and customer support." },
+        { "name": "AI Business Dashboard", "price": "₹ 75,000+", "description": "AI-powered analytics dashboard with real-time business insights." },
+        { "name": "Business Command Center", "price": "₹ 1,50,000+", "description": "Centralized AI command hub for comprehensive business intelligence." }
+      ]
+    },
+    {
+      "service": "SEO & Growth",
+      "plans": [
+        { "name": "Local SEO", "price": "₹ 9,999/month", "description": "Boost local search visibility with Google Maps optimization and local citations." },
+        { "name": "Growth SEO", "price": "₹ 19,999/month", "description": "Comprehensive SEO strategy for growing businesses targeting competitive keywords." },
+        { "name": "Business SEO", "price": "₹ 34,999/month", "description": "Advanced SEO with content strategy, link building, and technical optimization." },
+        { "name": "Enterprise SEO", "price": "₹ 59,999/month", "description": "Full-scale enterprise SEO with custom audit, migration, and dedicated team." }
+      ]
+    },
+    {
+      "service": "Custom Software",
+      "plans": [
+        { "name": "Internal Business Tool", "price": "₹ 1,50,000+", "description": "Custom internal tool built to streamline specific business operations." },
+        { "name": "Inventory Management System", "price": "₹ 2,00,000+", "description": "Real-time inventory tracking, stock alerts, and warehouse management." },
+        { "name": "CRM System", "price": "₹ 3,00,000+", "description": "Custom CRM with sales pipeline, customer insights, and automation." },
+        { "name": "ERP System", "price": "₹ 5,00,000+", "description": "End-to-end enterprise resource planning with multi-department integration." },
+        { "name": "SaaS MVP", "price": "₹ 5,00,000+", "description": "Minimum viable product to validate your SaaS idea with core features." },
+        { "name": "Enterprise Software", "price": "₹ 10,00,000+", "description": "Full-scale enterprise software with robust architecture and compliance." }
+      ]
+    },
+    {
+      "service": "UI/UX & Brand Design",
+      "plans": [
+        { "name": "Brand Starter", "price": "₹ 15,000", "description": "Logo design, color palette, typography, and basic brand guidelines." },
+        { "name": "UI/UX Professional", "price": "₹ 35,000", "description": "Complete UI/UX design with wireframes, prototypes, and user testing." },
+        { "name": "Brand Identity Suite", "price": "₹ 60,000", "description": "Comprehensive brand identity including stationery, social kit, and guidelines." },
+        { "name": "Enterprise Design System", "price": "₹ 1,25,000+", "description": "Scalable design system with component library and developer handoff." }
+      ]
+    }
+  ],
+  "carePlans": [
+    {
+      "name": "Basic Care",
+      "price": "₹ 999",
+      "period": "month",
+      "features": [
+        "Monthly Security Updates",
+        "Weekly Backups",
+        "Uptime Monitoring",
+        "Email Support (48h Response)"
+      ],
+      "gradient": "from-blue-400 to-cyan-300"
+    },
+    {
+      "name": "Growth Care",
+      "price": "₹ 2,499",
+      "period": "month",
+      "features": [
+        "Everything in Basic Care",
+        "Content Updates (5 pages/mo)",
+        "Performance Optimization",
+        "SEO Monitoring & Reports",
+        "Chat Support (12h Response)",
+        "Monthly Analytics Report"
+      ],
+      "gradient": "from-violet-400 to-purple-400"
+    },
+    {
+      "name": "Premium Care",
+      "price": "₹ 4,999",
+      "period": "month",
+      "features": [
+        "Everything in Growth Care",
+        "Unlimited Content Updates",
+        "24/7 Priority Support",
+        "Dedicated Account Manager",
+        "Monthly Strategy Session",
+        "Advanced Security Audit",
+        "Emergency Bug Fixes",
+        "Quarterly Performance Review"
+      ],
+      "gradient": "from-amber-400 to-orange-400"
+    }
+  ],
+  "addOns": [
+    { "name": "Extra Page", "price": "₹ 2,000", "description": "Additional page for your website beyond the plan limit." },
+    { "name": "Blog System", "price": "₹ 8,000", "description": "Full-featured blog with categories, tags and comments." },
+    { "name": "Admin Panel", "price": "₹ 15,000", "description": "Custom admin dashboard to manage your application." },
+    { "name": "Payment Gateway", "price": "₹ 8,000", "description": "Secure payment processing integration for your platform." },
+    { "name": "Multi-language", "price": "₹ 12,000", "description": "Translate your site into multiple languages seamlessly." },
+    { "name": "Firebase Integration", "price": "₹ 8,000", "description": "Real-time database, auth and cloud functions setup." },
+    { "name": "Push Notifications", "price": "₹ 10,000", "description": "Engage users with real-time push notification alerts." },
+    { "name": "CRM Integration", "price": "₹ 20,000", "description": "Connect your site with popular CRM platforms." },
+    { "name": "WhatsApp Automation", "price": "₹ 15,000", "description": "Automate WhatsApp messaging for sales and support." },
+    { "name": "AI Chatbot", "price": "₹ 25,000", "description": "Intelligent chatbot to handle customer queries 24/7." }
+  ]
+}

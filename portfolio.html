@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AHS Portfolio - Real results for real businesses. Explore our latest AI and software projects.">
+    <meta name="keywords" content="portfolio, AI projects, software projects, case studies, AHS">
+    <meta name="author" content="Auto Hub Solution">
+    <meta property="og:title" content="AHS | Portfolio">
+    <meta property="og:description" content="Real results for real businesses. Explore our latest projects.">
+    <meta property="og:type" content="website">
+    <title>AHS | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="neural-canvas"></canvas>
+    <div id="particles-container"></div>
+
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-text">
+                <span class="loader-brand">AHS</span>
+                <span class="loader-sub">INITIALIZING SYSTEMS</span>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" class="logo-svg">
+                        <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+                        <text x="20" y="24" text-anchor="middle" fill="url(#logoGrad)" font-family="Orbitron" font-size="12" font-weight="700">AHS</text>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00d4ff"/>
+                                <stop offset="100%" style="stop-color:#00ff88"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">AHS</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="system.html" class="nav-link">System</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="audit.html" class="nav-link">Audit</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="booking.html" class="btn btn-primary btn-nav">Book Strategy Call</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="system.html" class="mobile-link">System</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="portfolio.html" class="mobile-link">Portfolio</a>
+            <a href="audit.html" class="mobile-link">Audit</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;text-align:center;">Book Strategy Call</a>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">OUR WORK</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Portfolio</span></h2>
+                <p class="section-subtitle">Real results for real businesses. Explore our latest projects.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card glass-card reveal-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">AI Automation</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI-Powered Inventory Management</h3>
+                        <p>Automated stock prediction and reordering system for a retail chain, reducing waste by 40%.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span><span>TensorFlow</span><span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card glass-card reveal-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0a1628,#0d2847)">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Healthcare</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Telemedicine Platform</h3>
+                        <p>Full-stack telehealth solution with AI triage, video consultations, and e-prescriptions.</p>
+                        <div class="portfolio-tech">
+                            <span>Next.js</span><span>Node.js</span><span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card glass-card reveal-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0a1628,#1a0d2e)">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">FinTech</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Smart Finance Dashboard</h3>
+                        <p>Real-time financial analytics platform with AI-driven insights and automated reporting.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span><span>D3.js</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card glass-card reveal-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0a1628,#0d2e1a)">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">E-Commerce</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Shopping Assistant</h3>
+                        <p>Personalized shopping experience with AI recommendations, boosting conversions by 65%.</p>
+                        <div class="portfolio-tech">
+                            <span>Flutter</span><span>Firebase</span><span>GPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 40 40" width="40" height="40">
+                            <polygon points="20,2 38,12 38,28 20,38 2,28 2,12" fill="none" stroke="url(#fLogoGrad)" stroke-width="2"/>
+                            <text x="20" y="24" text-anchor="middle" fill="url(#fLogoGrad)" font-family="Orbitron" font-size="12" font-weight="700">AHS</text>
+                            <defs><linearGradient id="fLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00d4ff"/><stop offset="100%" style="stop-color:#00ff88"/></linearGradient></defs>
+                        </svg>
+                        <span>AHS</span>
+                    </div>
+                    <p>Transforming Ideas Into Intelligent Growth Systems. MSME-registered AI and software solutions company based in Trichy, Tamil Nadu.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/autohub_solution777?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="services.html">AI &amp; Automation</a>
+                    <a href="services.html">Software Development</a>
+                    <a href="services.html">Web Development</a>
+                    <a href="services.html">Mobile Apps</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="system.html">Our Method</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="index.html#why-ahs">Why AHS</a>
+                    <a href="index.html#testimonials">Testimonials</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="tel:+919940918442"><i class="fas fa-phone-alt"></i> +91 9940918442</a>
+                    <a href="mailto:usrinivasan240@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Trichy, TN</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&amp;copy; 2026 Auto Hub Solution (AHS). All rights reserved. MSME Registered.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919940918442?text=Hi%20AHS%2C%20I%27m%20interested%20in%20your%20AI%20solutions." class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="ai-widget" id="ai-widget">
+        <button class="ai-widget-btn" id="ai-widget-btn" aria-label="AI Assistant">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div class="ai-widget-chat" id="ai-widget-chat">
+            <div class="aiw-header">
+                <div class="aiw-header-info">
+                    <i class="fas fa-robot"></i>
+                    <span>AHS AI Assistant</span>
+                </div>
+                <button class="aiw-close" id="aiw-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="aiw-messages" id="aiw-messages">
+                <div class="aiw-msg bot">
+                    <p>Hi! I'm the AHS AI Assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="aiw-quick-actions">
+                <button class="aiw-quick" data-msg="Tell me about your services">Our Services</button>
+                <button class="aiw-quick" data-msg="I want to book a strategy call">Book Strategy Call</button>
+                <button class="aiw-quick" data-msg="What are your prices?">Pricing</button>
+                <button class="aiw-quick" data-msg="I need AI automation">AI Solutions</button>
+            </div>
+            <div class="aiw-input-area">
+                <input type="text" id="aiw-input" placeholder="Type your message..." autocomplete="off">
+                <button id="aiw-send" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js"></script>
+    <script src="env-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

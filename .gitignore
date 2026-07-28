@@ -1,0 +1,19 @@
+# Environment config (contains API keys)
+env-config.js
+
+# Firebase config
+firebase-config.js
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
