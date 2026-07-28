@@ -1,0 +1,95 @@
+AHS Website - Complete Services & Pricing List
+================================================
+
+CORE PACKAGES
+------------------------------------------------------
+Package              Price (USD)    Target
+------------------------------------------------------
+ACCELERATE           $499           Startups, Local Businesses, Personal Brands
+HARMONIZE            $999           Growing Businesses, Hotels, Real Estate, Agencies
+SCALE                $2,499         Medium Businesses, Healthcare, Construction
+INTELLIGENT SCALE    $4,999+        AI Startups, SaaS, ERP, Enterprise
+
+LANDING PAGES
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+Basic Landing Page               $299
+Premium Landing Page             $499
+High-Converting Sales Funnel     $799
+
+WEBSITE DEVELOPMENT
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+Portfolio Website                $399
+Business Website                 $699
+Corporate Website                $999
+Dynamic Website                  $1,499
+Booking Website                  $1,799
+E-Commerce Website               $2,499
+Multi-Vendor Marketplace         $5,999+
+
+AI & AUTOMATION
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+AI Chatbot                       $799
+Business Automation              $999
+Workflow Automation              $1,499
+AI Customer Support              $2,499
+AI Dashboard                     $2,999
+
+BUSINESS SOFTWARE
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+CRM System                       $2,999+
+ERP System                       $7,999+
+HRMS                             $3,999+
+Inventory Management             $2,999+
+School Management System         $4,999+
+Hospital Management System       $9,999+
+
+MOBILE APPLICATIONS
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+Android App                      $1,999+
+iOS App                          $2,499+
+Cross-Platform App               $3,499+
+Enterprise Mobile App            $7,999+
+
+HOSTING & DEPLOYMENT
+------------------------------------------------------
+Service                          Price
+------------------------------------------------------
+Deployment                       $199
+Cloud Deployment                 $399
+Server Setup                     $499
+Docker Deployment                $599
+CI/CD Pipeline                   $999
+
+MAINTENANCE PLANS (Monthly)
+------------------------------------------------------
+Plan                             Price
+------------------------------------------------------
+Essential Care                   $49/mo
+Business Care                    $99/mo
+Enterprise Care                  $199/mo
+
+ADD-ON SERVICES
+------------------------------------------------------
+Service                                    Price
+------------------------------------------------------
+Logo Design                               $199
+Brand Identity                            $499
+SEO Optimization                          $499+
+Google Business Profile Optimization      $299
+Website Speed Optimization                $299
+Website Audit                             FREE
+AI Business Consultation                  FREE (30 Min)
+
+================================================
+Total: 8 sections, 40+ services
+================================================
