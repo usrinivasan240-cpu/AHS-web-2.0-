@@ -495,69 +495,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // === Currency Toggle (USD / INR) ===
-    const INR_RATE = 85;
     let isINR = localStorage.getItem('ahs-currency') === 'inr';
 
     const currencyToggle = document.getElementById('currency-toggle');
     const labelUSD = document.getElementById('currency-label-usd');
     const labelINR = document.getElementById('currency-label-inr');
 
-    function formatINR(usd) {
-        const inr = Math.round(usd * INR_RATE);
-        return inr.toLocaleString('en-IN');
-    }
-
     function updateCurrency() {
         const symbol = isINR ? '₹' : '$';
-        const prefix = isINR ? '₹' : '$';
-
-        // Update pricing cards (.price elements)
-        document.querySelectorAll('.price[data-usd]').forEach(el => {
-            const usd = parseInt(el.dataset.usd);
-            if (isINR) {
-                el.textContent = formatINR(usd) + '+';
-            } else {
-                const original = el.getAttribute('data-original');
-                if (!original) {
-                    el.setAttribute('data-original', el.textContent);
-                }
-                el.textContent = el.getAttribute('data-original') || usd.toLocaleString();
-            }
-        });
 
         // Update currency symbols in pricing cards
         document.querySelectorAll('.pricing-amount .currency, .care-price .currency').forEach(el => {
             el.textContent = symbol;
         });
 
-        // Update table prices (.tbl-price elements)
+        // Update table prices - just swap symbol
         document.querySelectorAll('.tbl-price[data-usd]').forEach(el => {
             const usd = parseInt(el.dataset.usd);
-            if (isINR) {
-                el.textContent = '₹' + formatINR(usd);
-            } else {
-                el.textContent = '$' + usd.toLocaleString();
-            }
+            el.textContent = symbol + usd.toLocaleString();
         });
 
-        // Update care plan prices
-        document.querySelectorAll('.care-price span[data-usd]').forEach(el => {
-            const usd = parseInt(el.dataset.usd);
-            if (isINR) {
-                el.textContent = formatINR(usd);
-            } else {
-                el.textContent = usd;
-            }
-        });
+        // Update care plan prices (numbers stay same)
+        // No change needed - numbers are already in HTML
 
-        // Update payment threshold
+        // Update payment threshold - just swap symbol
         document.querySelectorAll('.payment-threshold[data-usd]').forEach(el => {
             const usd = parseInt(el.dataset.usd);
-            if (isINR) {
-                el.textContent = '₹' + formatINR(usd);
-            } else {
-                el.textContent = '$' + usd.toLocaleString();
-            }
+            el.textContent = symbol + usd.toLocaleString();
         });
 
         // Update toggle and labels
