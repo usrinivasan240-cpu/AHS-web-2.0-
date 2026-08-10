@@ -509,33 +509,39 @@ document.addEventListener('DOMContentLoaded', () => {
             el.textContent = symbol;
         });
 
-        // Update table prices - swap symbol and number
-        document.querySelectorAll('.tbl-price[data-usd]').forEach(el => {
-            const usd = parseInt(el.dataset.usd);
+        // Update pricing card price numbers (main packages)
+        document.querySelectorAll('.pricing-amount .price[data-inr]').forEach(el => {
             if (isINR) {
-                el.textContent = el.getAttribute('data-inr') || '₹' + usd.toLocaleString();
+                el.textContent = el.dataset.inr;
             } else {
-                el.textContent = '$' + usd.toLocaleString();
+                el.textContent = el.dataset.usd;
+            }
+        });
+
+        // Update table prices - swap symbol and number
+        document.querySelectorAll('.tbl-price[data-inr]').forEach(el => {
+            if (isINR) {
+                el.textContent = el.dataset.inr;
+            } else {
+                el.textContent = '$' + el.dataset.usd;
             }
         });
 
         // Update care plan prices
-        document.querySelectorAll('.care-price span[data-usd]').forEach(el => {
-            const usd = parseInt(el.dataset.usd);
+        document.querySelectorAll('.care-price span[data-inr]').forEach(el => {
             if (isINR) {
-                el.textContent = el.getAttribute('data-inr') || usd.toLocaleString();
+                el.textContent = el.dataset.inr;
             } else {
-                el.textContent = usd;
+                el.textContent = el.dataset.usd;
             }
         });
 
         // Update payment threshold
-        document.querySelectorAll('.payment-threshold[data-usd]').forEach(el => {
-            const usd = parseInt(el.dataset.usd);
+        document.querySelectorAll('.payment-threshold[data-inr]').forEach(el => {
             if (isINR) {
-                el.textContent = el.getAttribute('data-inr') || '₹' + usd.toLocaleString();
+                el.textContent = el.dataset.inr;
             } else {
-                el.textContent = '$' + usd.toLocaleString();
+                el.textContent = '$' + el.dataset.usd;
             }
         });
 
