@@ -494,8 +494,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === Currency Toggle (INR / USD) ===
-    let isINR = localStorage.getItem('ahs-currency') !== 'usd';
+    // === Currency Toggle (India / Global) ===
+    let isINR = localStorage.getItem('ahs-region') !== 'global';
 
     const currencyToggle = document.getElementById('currency-toggle');
     const labelUSD = document.getElementById('currency-label-usd');
@@ -518,17 +518,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update table prices - swap symbol and number
-        document.querySelectorAll('.tbl-price[data-inr]').forEach(el => {
-            if (isINR) {
-                el.textContent = el.dataset.inr;
-            } else {
-                el.textContent = '$' + el.dataset.usd;
-            }
-        });
-
-        // Update care plan prices
-        document.querySelectorAll('.care-price span[data-inr]').forEach(el => {
+        // Update overview card price numbers
+        document.querySelectorAll('.overview-price .price[data-inr]').forEach(el => {
             if (isINR) {
                 el.textContent = el.dataset.inr;
             } else {
@@ -536,13 +527,48 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update payment threshold
+        // Update care plan price numbers
+        document.querySelectorAll('.care-price .price[data-inr]').forEach(el => {
+            if (isINR) {
+                el.textContent = el.dataset.inr;
+            } else {
+                el.textContent = el.dataset.usd;
+            }
+        });
+
+        // Update table prices - INR column
+        document.querySelectorAll('.tbl-price[data-inr]').forEach(el => {
+            if (isINR) {
+                el.textContent = el.dataset.inr;
+            } else {
+                el.textContent = el.dataset.usd;
+            }
+        });
+
+        // Update table prices - USD column (show opposite)
+        document.querySelectorAll('.tbl-price-usd[data-inr]').forEach(el => {
+            if (isINR) {
+                el.textContent = el.dataset.inr;
+            } else {
+                el.textContent = el.dataset.usd;
+            }
+        });
+
+        // Update payment thresholds
         document.querySelectorAll('.payment-threshold[data-inr]').forEach(el => {
             if (isINR) {
                 el.textContent = el.dataset.inr;
             } else {
-                el.textContent = '$' + el.dataset.usd;
+                el.textContent = el.dataset.usd;
             }
+        });
+
+        // Show/hide region labels in payment section
+        document.querySelectorAll('.region-india').forEach(el => {
+            el.style.display = isINR ? 'inline' : 'none';
+        });
+        document.querySelectorAll('.region-usd').forEach(el => {
+            el.style.display = isINR ? 'none' : 'inline';
         });
 
         // Update toggle and labels
@@ -552,7 +578,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (labelUSD) labelUSD.classList.toggle('active', !isINR);
         if (labelINR) labelINR.classList.toggle('active', isINR);
 
-        localStorage.setItem('ahs-currency', isINR ? 'inr' : 'usd');
+        localStorage.setItem('ahs-region', isINR ? 'india' : 'global');
     }
 
     if (currencyToggle) {
@@ -576,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Apply saved currency on load
+    // Apply saved region on load
     if (currencyToggle) {
         updateCurrency();
     }

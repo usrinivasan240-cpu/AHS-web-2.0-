@@ -1,0 +1,228 @@
+========================================
+AHS - AUTO HUB SOLUTION
+Complete Services & Pricing List (2026)
+========================================
+
+========================================
+1. CORE PACKAGES
+========================================
+
+ACCELERATE
+  INR: ₹9,999 (one-time)
+  USD: $119
+  Delivery: 5-7 Business Days
+  Target: Startups, Local Businesses, Personal Brands, Restaurants, Beauty Salons, Clinics
+  Includes:
+    - Premium Responsive Website (Up to 5 Pages)
+    - Modern UI/UX
+    - Mobile Responsive
+    - Contact Form
+    - WhatsApp Integration
+    - Google Maps Integration
+    - Basic SEO
+    - SSL Configuration Guidance
+    - Google Analytics Setup
+    - Performance Optimization
+    - Social Media Links
+    - 30 Days Support
+
+HARMONIZE (Most Popular)
+  INR: ₹24,999 (one-time)
+  USD: $294
+  Delivery: 10-15 Business Days
+  Target: Growing Businesses, Hotels, Real Estate, Agencies, Educational Institutes
+  Includes Everything in Accelerate +
+    - Up to 15 Pages
+    - Dynamic Website
+    - CMS / Admin Panel
+    - Blog System
+    - Gallery
+    - Team Management
+    - Testimonials
+    - Inquiry Dashboard
+    - Advanced Contact Forms
+    - Booking System
+    - Email Integration
+    - Basic CRM
+    - On-Page SEO
+    - 60 Days Support
+
+SCALE
+  INR: ₹49,999 (one-time)
+  USD: $588
+  Delivery: 3-5 Weeks
+  Target: Medium Businesses, Healthcare, Construction, Travel Agencies, Enterprises
+  Includes Everything in Harmonize +
+    - Custom Dashboard
+    - Role-Based Login
+    - Firebase Integration
+    - Database
+    - Admin Panel
+    - User Management
+    - API Integration
+    - Payment Gateway
+    - Notifications
+    - Reports
+    - AI Chatbot (Basic)
+    - Performance Monitoring
+    - Security Hardening
+    - 90 Days Support
+
+INTELLIGENT SCALE (Enterprise)
+  INR: ₹99,999+ (custom)
+  USD: $1,176+
+  Delivery: Custom Timeline
+  Target: AI Startups, SaaS, ERP, CRM, Automation, Enterprise Platforms
+  Includes Everything in Scale +
+    - AI Features
+    - Business Automation
+    - Custom CRM
+    - ERP Modules
+    - AI Dashboard
+    - AI Assistant
+    - API Development
+    - Multi-User System
+    - Analytics Dashboard
+    - AI Workflows
+    - Advanced Security
+    - Cloud Deployment
+    - Documentation
+    - 6 Months Support
+
+
+========================================
+2. LANDING PAGES
+========================================
+
+Basic Landing Page              INR: ₹24,999    USD: $299
+Premium Landing Page            INR: ₹49,999    USD: $499
+High-Converting Sales Funnel    INR: ₹69,999    USD: $799
+
+
+========================================
+3. WEBSITE DEVELOPMENT
+========================================
+
+Portfolio Website               INR: ₹24,999      USD: $399
+Business Website                INR: ₹49,999      USD: $699
+Corporate Website               INR: ₹99,999      USD: $999
+Dynamic Website                 INR: ₹1,49,999    USD: $1,499
+Booking Website                 INR: ₹1,79,999    USD: $1,799
+E-Commerce Website              INR: ₹2,49,999    USD: $2,499
+Multi-Vendor Marketplace        INR: ₹5,99,999+   USD: $5,999
+
+
+========================================
+4. AI & AUTOMATION
+========================================
+
+AI Chatbot                      INR: ₹25,000+     USD: $799
+Business Automation             INR: ₹35,000+     USD: $999
+Workflow Automation             INR: ₹35,000+     USD: $1,499
+AI Customer Support             INR: ₹50,000+     USD: $2,499
+AI Dashboard                    INR: ₹75,000+     USD: $2,999
+
+
+========================================
+5. BUSINESS SOFTWARE
+========================================
+
+CRM System                      INR: ₹3,00,000+   USD: $2,999
+ERP System                      INR: ₹5,00,000+   USD: $7,999
+HRMS                            INR: ₹3,99,999+   USD: $3,999
+Inventory Management            INR: ₹2,00,000+   USD: $2,999
+School Management System        INR: ₹5,00,000+   USD: $4,999
+Hospital Management System      INR: ₹10,00,000+  USD: $9,999
+
+
+========================================
+6. MOBILE APPLICATIONS
+========================================
+
+Android App                     INR: ₹49,999+     USD: $1,999
+iOS App                         INR: ₹99,999+     USD: $2,499
+Cross-Platform App              INR: ₹1,99,999+   USD: $3,499
+Enterprise Mobile App           INR: ₹3,99,999+   USD: $7,999
+
+
+========================================
+7. HOSTING & DEPLOYMENT
+========================================
+
+Deployment                      INR: ₹14,999      USD: $199
+Cloud Deployment                INR: ₹29,999      USD: $399
+Server Setup                    INR: ₹39,999      USD: $499
+Docker Deployment               INR: ₹49,999      USD: $599
+CI/CD Pipeline                  INR: ₹79,999      USD: $999
+
+
+========================================
+8. CARE PLANS (Monthly)
+========================================
+
+Essential Care                  INR: ₹999/mo      USD: $49/mo
+  - Security Updates
+  - Website Monitoring
+  - Monthly Backup
+  - Minor Content Updates
+  - Email Support
+
+Business Care (Popular)         INR: ₹2,499/mo    USD: $99/mo
+  - Everything in Essential
+  - Weekly Backups
+  - Performance Optimization
+  - SEO Health Check
+  - Priority Support
+  - Hosting Assistance
+
+Enterprise Care                 INR: ₹4,999/mo    USD: $199/mo
+  - Everything in Business
+  - 24/7 Monitoring
+  - Emergency Support
+  - Monthly Reports
+  - Feature Improvements
+  - Dedicated Account Manager
+
+
+========================================
+9. ADD-ON SERVICES
+========================================
+
+Logo Design                     INR: ₹15,000      USD: $199
+Brand Identity                  INR: ₹60,000      USD: $499
+SEO Optimization                INR: ₹9,999+      USD: $499
+Google Business Profile Optimization  INR: ₹19,999  USD: $299
+Website Speed Optimization      INR: ₹19,999      USD: $299
+Website Audit                   FREE               FREE
+AI Business Consultation        FREE (30 Min)      FREE (30 Min)
+
+
+========================================
+10. PAYMENT TERMS
+========================================
+
+Projects Under ₹1,50,000 ($2,000):
+  - 50% Advance
+  - 50% Before Final Deployment
+
+Projects Above ₹1,50,000 ($2,000):
+  - 30% Advance
+  - 40% After Design Approval
+  - 30% Before Production Launch
+
+
+========================================
+COMPANY INFO
+========================================
+
+Company:    Auto Hub Solution (AHS)
+Tagline:    Accelerate, Harmonize, Scale
+Location:   Trichy, Tamil Nadu, India
+Phone:      +91 9940918442
+Email:      usrinivasan240@gmail.com
+Website:    ahs-web-2-0.vercel.app
+MSME:       Registered
+
+========================================
+TOTAL: 47 SERVICES ACROSS 10 CATEGORIES
+========================================
