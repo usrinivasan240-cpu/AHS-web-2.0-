@@ -2108,6 +2108,157 @@ a, button, input, textarea, select { touch-action: manipulation; }
 }
 
 /* ========================================
+   REGION SELECTION MODAL
+   ======================================== */
+.region-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 10, 24, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: regionFadeIn 0.3s ease;
+}
+
+.region-modal-overlay[style*="display: none"] {
+    animation: none;
+}
+
+@keyframes regionFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes regionFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.region-modal-card {
+    width: 90%;
+    max-width: 440px;
+    padding: 40px 36px;
+    text-align: center;
+    background: rgba(10, 22, 40, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 255, 0.08);
+    animation: regionCardIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.region-modal-card:hover {
+    transform: none;
+    border-color: rgba(0, 212, 255, 0.2);
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 212, 255, 0.08);
+}
+
+@keyframes regionCardIn {
+    from { opacity: 0; transform: scale(0.92) translateY(16px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.region-modal-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.region-modal-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+}
+
+.region-modal-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.region-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 20px 16px;
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    background: var(--bg-glass);
+    color: var(--text-primary);
+    transition: var(--transition);
+    cursor: pointer;
+    font-family: var(--font-primary);
+}
+
+.region-btn:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.region-btn.suggested {
+    border-color: var(--accent-green);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.12);
+    background: rgba(0, 255, 136, 0.06);
+}
+
+.region-btn.suggested::after {
+    content: 'Suggested';
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-green);
+    background: var(--bg-primary);
+    border: 1px solid var(--accent-green);
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+.region-btn { position: relative; }
+
+.region-btn:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+.region-btn-flag {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.region-btn-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.region-btn-currency {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.region-modal-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    min-height: 1.2em;
+}
+
+/* ========================================
    FORMS - AUDIT, MEETING, CONTACT
    ======================================== */
 .audit-container,

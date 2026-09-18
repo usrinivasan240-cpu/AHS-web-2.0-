@@ -1,0 +1,189 @@
+AUTO HUB SOLUTION (AHS) - COMPLETE SERVICES WITH PRICING
+Accelerate Harmonize Scale | Trichy, Tamil Nadu, India
+Source of Truth: pricing.html + pricing.json (2026 Reconciled)
+Contact: +91 9940918442 | usrinivasan240@gmail.com | https://ahs-web-2-0.vercel.app
+================================================================================
+
+HOW TO READ:
+INR = India Price | USD = Global Price
+Prices are starting prices. Final quote depends on scope.
+Payment Terms and Excluded Costs at bottom apply to all services.
+
+--------------------------------------------------------------------------------
+1. CORE PACKAGES (Featured - 4)
+--------------------------------------------------------------------------------
+1) ACCELERATE - Starter | INR 9,999 | USD 349
+   Best for: New businesses validating idea
+   Includes: 1-Page High-Converting Website, WhatsApp Business Setup,
+   Google Business Profile, Basic SEO Setup, Fast Delivery (1 week)
+
+2) HARMONIZE - Most Popular | INR 24,999 | USD 799
+   Best for: Growing businesses that need leads
+   Includes: Up to 15 Pages Custom Website, Payment Gateway Integration,
+   Free Logo Design, Advanced SEO Setup, CRM Basic Setup,
+   Google Analytics + Search Console, 30 Days Priority Support
+
+3) SCALE - Growth | INR 49,999 | USD 1,499
+   Best for: Businesses ready to scale with AI
+   Includes: Custom Web Application, AI Chatbot (Basic Q&A),
+   3-Month Priority Support, Complete Brand Kit,
+   Marketing Automation Setup, Monthly Strategy Review
+
+4) INTELLIGENT SCALE - Enterprise | INR 99,999+ | USD 3,499+
+   Best for: Enterprises & custom AI systems
+   Includes: Fully Custom AI-Powered Platform, Dedicated Project Manager,
+   12-Month Premium Support, AI + Automation + Analytics Stack,
+   Staff Training & Documentation, SLA-Backed Delivery
+
+--------------------------------------------------------------------------------
+2. LANDING PAGES (3)
+--------------------------------------------------------------------------------
+1) Basic Landing Page | INR 14,999 | USD 299
+   1-page high-converting design, lead form + WhatsApp, mobile responsive, 1-week delivery
+2) Premium Landing Page | INR 29,999 | USD 599
+   Custom design + copywriting, A/B testing, CRM integration, analytics setup
+3) Sales Funnel | INR 49,999 | USD 999
+   Multi-step funnel, email automation, payment integration, conversion optimization
+
+--------------------------------------------------------------------------------
+3. WEBSITE DEVELOPMENT (7)
+--------------------------------------------------------------------------------
+1) Portfolio Website | INR 19,999 | USD 499
+   Up to 10 pages, image galleries, contact forms, mobile responsive
+2) Business Website | INR 39,999 | USD 899
+   Up to 20 pages, blog/news section, SEO optimization, social media integration
+3) Corporate Website | INR 74,999 | USD 1,499
+   Unlimited pages, multi-language, advanced animations, CMS training
+4) Dynamic Web Application | INR 1,24,999 | USD 2,499
+   User login, dashboards, database, API integration
+5) Online Booking System | INR 1,49,999 | USD 2,999
+   Real-time availability, payments, SMS/email reminders, admin panel
+6) E-commerce Website | INR 1,99,999 | USD 3,999
+   Product catalog, cart + checkout, payment gateway, order management, inventory
+7) Multi-Vendor Marketplace | INR 4,99,999 | USD 9,999
+   Vendor dashboards, commission system, advanced search, mobile app ready
+
+--------------------------------------------------------------------------------
+4. AI & AUTOMATION (6)
+--------------------------------------------------------------------------------
+1) AI Chatbot | INR 24,999 | USD 499
+   Website WhatsApp chatbot, FAQs auto-reply, lead capture, human handoff
+2) LLM Integration | INR 19,999 | USD 499
+   GPT custom training, document Q&A, API integration
+3) Business Process Automation | INR 39,999 | USD 999
+   Workflow automation, data entry elimination, email + notification automation
+4) Workflow Automation | INR 49,999 | USD 1,499
+   Multi-step workflows, third-party integrations, conditional logic, reporting
+5) AI Customer Support | INR 74,999 | USD 2,499
+   24/7 auto-support, ticket system, sentiment analysis, multi-language
+6) AI Analytics Dashboard | INR 99,999 | USD 3,499
+   Predictive analytics, custom KPIs, real-time reports, data visualization
+
+--------------------------------------------------------------------------------
+5. BUSINESS SOFTWARE (8)
+--------------------------------------------------------------------------------
+1) CRM System | INR 2,49,999 | USD 4,999
+   Customer management, sales pipeline, email integration, reports
+2) ERP System | INR 4,99,999 | USD 9,999
+   Finance + HR + Inventory + Sales unified, multi-branch, role-based access
+3) HRMS | INR 2,99,999 | USD 5,999
+   Attendance, payroll, leave management, performance tracking
+4) Inventory Management | INR 1,49,999 | USD 3,499
+   Stock tracking, purchase orders, supplier management, low-stock alerts
+5) School Management | INR 3,99,999 | USD 7,999
+   Admissions, fees, attendance, parent portal, exam management
+6) Hospital Management | INR 7,49,999 | USD 14,999
+   Patient records, appointments, billing, pharmacy, lab integration
+7) Restaurant Management | INR 1,99,999 | USD 4,999
+   POS, table management, KDS, online ordering, billing
+8) Custom Software | INR 2,49,999 | USD 5,000
+   Fully custom scope-based development, dedicated team, SLA support
+
+--------------------------------------------------------------------------------
+6. MOBILE APPS (4)
+--------------------------------------------------------------------------------
+1) Android App | INR 74,999 | USD 1,999
+   Native Android, Play Store deployment, push notifications
+2) iOS App | INR 1,24,999 | USD 2,999
+   Native iOS, App Store deployment, Apple guidelines compliant
+3) Cross-Platform App | INR 1,99,999 | USD 4,499
+   Single codebase Android + iOS, faster delivery, easy maintenance
+4) Enterprise Mobile Solution | INR 3,99,999 | USD 8,999
+   Backend + Admin panel + APIs, MDM support, high security
+
+--------------------------------------------------------------------------------
+7. HOSTING & DEVOPS (6)
+--------------------------------------------------------------------------------
+1) Basic Hosting Setup | INR 4,999 | USD 99
+   Shared/cloud setup, SSL, domain connection, email setup
+2) Cloud Hosting Setup | INR 14,999 | USD 299
+   AWS/Vercel/Cloud setup, CDN, auto-scaling basics, monitoring
+3) Dedicated Server Setup | INR 19,999 | USD 399
+   VPS/dedicated config, firewall, backups, performance tuning
+4) Docker Deployment | INR 24,999 | USD 499
+   Containerization, docker-compose, registry setup, documentation
+5) CI/CD Pipeline | INR 39,999 | USD 799
+   GitHub Actions auto-deploy, staging + production, rollback, testing hooks
+6) Advanced Cloud Architecture | INR 74,999 | USD 1,499
+   Microservices ready, load balancer, Kubernetes basics, cost optimization
+
+--------------------------------------------------------------------------------
+8. CARE PLANS - MONTHLY MAINTENANCE (3)
+--------------------------------------------------------------------------------
+1) Essential Care | INR 999/mo | USD 39/mo
+   Security updates, weekly backups, uptime monitoring, monthly reports, email support
+2) Business Care | INR 2,499/mo | USD 89/mo
+   Everything in Essential + content updates (4 hrs), SEO monitoring,
+   performance optimization, priority support, quarterly strategy call
+3) Enterprise Care | INR 4,999/mo | USD 199/mo
+   Everything in Business + unlimited small updates, dedicated manager,
+   24/7 support, monthly strategy, emergency fixes (4-hr SLA)
+
+--------------------------------------------------------------------------------
+9. BRANDING ADD-ONS (7)
+--------------------------------------------------------------------------------
+1) Professional Logo Design | INR 7,999 | USD 149
+   3 concepts, unlimited revisions (fair), vector files, brand colors
+2) Complete Brand Identity | INR 24,999 | USD 499
+   Logo + colors + fonts + business cards + letterhead + social kit + guidelines
+3) SEO Starter Pack | INR 14,999 | USD 399
+   Keyword research, on-page SEO, Google setup, sitemap, 1-month tracking
+4) Google Business Profile | INR 9,999 | USD 249
+   Profile setup + optimization, photos, reviews setup, posts training
+5) Website Speed Optimization | INR 9,999 | USD 249
+   Core Web Vitals fix, image optimization, caching, CDN setup
+6) Free Website Audit | INR FREE | USD FREE
+   Full performance + SEO + UX report, competitor analysis, action plan
+7) Free Consultation (30 min) | INR FREE | USD FREE
+   Book via Calendly: https://calendly.com/usrinivasan240/30min
+
+--------------------------------------------------------------------------------
+PAYMENT TERMS
+--------------------------------------------------------------------------------
+- Projects under INR 1.5L / USD 2,000: 50% advance + 50% on delivery
+- Projects above INR 1.5L / USD 2,000: 30% advance + 40% on design approval + 30% on delivery
+- Care Plans: Monthly advance. Quarterly = 5% off, Yearly = 15% off (2 months free equivalent)
+- Payments via UPI / Bank Transfer (India) / Wise-PayPal-Card (Global)
+
+--------------------------------------------------------------------------------
+EXCLUDED COSTS (Client pays extra at actuals)
+--------------------------------------------------------------------------------
+- Domain + Hosting renewals (approx INR 2,000 - 15,000 / USD 25 - 200 per year)
+- Premium plugins / themes licenses
+- Third-party APIs: WhatsApp API, SMS credits, Payment gateway fees (2-3%),
+  Google Maps API, AI API usage (OpenAI etc.)
+- App Store fees: Apple Developer USD 99/yr, Google Play USD 25 one-time
+- Ad spend (Google/Meta ads)
+- Stock photos / premium fonts if required
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+- This file REPLACES old services-pricing.txt and services-list.txt (both deprecated, prices drifted).
+- Website truth: pricing.html. Machine truth: pricing.json. Human/share truth: this file.
+- Total services in this file: 48 (4 + 3 + 7 + 6 + 8 + 4 + 6 + 3 + 7).
+- Old txt had only 44 (missing: LLM Integration, Restaurant Management,
+  Custom Software, Advanced Cloud Architecture). Those 4 are ADDED here.
+- services.html packages ($499/$999/$2499/$4999+) are STALE - ignore, use prices above.
+- Generated: 2026-09-18 | AHS Web 2.0 Reconciliation
+================================================================================

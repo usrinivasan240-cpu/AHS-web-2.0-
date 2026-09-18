@@ -720,6 +720,27 @@
         </div>
     </div>
 
+    <!-- Region Selection Modal -->
+    <div id="region-modal" class="region-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="region-modal-title" style="display:none;">
+        <div class="region-modal-card glass-card">
+            <h2 id="region-modal-title" class="region-modal-title">Where are you located?</h2>
+            <p class="region-modal-subtitle">We'll show you pricing in the right currency.</p>
+            <div class="region-modal-buttons">
+                <button id="region-btn-india" class="region-btn region-btn-india">
+                    <span class="region-btn-flag">&#127470;&#127475;</span>
+                    <span class="region-btn-text">India</span>
+                    <span class="region-btn-currency">Show INR</span>
+                </button>
+                <button id="region-btn-global" class="region-btn region-btn-global">
+                    <span class="region-btn-flag">&#127758;</span>
+                    <span class="region-btn-text">Global</span>
+                    <span class="region-btn-currency">Show USD</span>
+                </button>
+            </div>
+            <p class="region-modal-hint" id="region-modal-hint"></p>
+        </div>
+    </div>
+
     <div id="toast" class="toast"></div>
 
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

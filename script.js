@@ -606,4 +606,93 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currencyToggle) {
         updateCurrency();
     }
+
+    // === Region Selection Modal (pricing.html only) ===
+    function initRegionModal() {
+        const modal = document.getElementById('region-modal');
+        if (!modal) return; // not on pricing.html
+
+        const saved = localStorage.getItem('ahs-region');
+
+        // Returning visitor — apply silently, skip modal
+        if (saved) {
+            isINR = saved !== 'global';
+            updateCurrency();
+            return;
+        }
+
+        // First visit — show modal after loader
+        const btnIndia = document.getElementById('region-btn-india');
+        const btnGlobal = document.getElementById('region-btn-global');
+        const hintEl = document.getElementById('region-modal-hint');
+
+        if (!btnIndia || !btnGlobal) return;
+
+        let suggested = null;
+
+        // Try silent IP geolocation with 4s timeout
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 4000);
+
+        fetch('https://ipapi.co/json/', { signal: controller.signal })
+            .then(res => {
+                clearTimeout(timeoutId);
+                return res.json();
+            })
+            .then(data => {
+                suggested = data.country_code === 'IN' ? 'india' : 'global';
+                highlightSuggestion(suggested);
+                if (hintEl) hintEl.textContent = 'Auto-detected: ' + (suggested === 'india' ? 'India' : 'Global');
+            })
+            .catch(() => {
+                clearTimeout(timeoutId);
+                // Fetch failed / offline / timeout — default suggestion: India
+                suggested = 'india';
+                highlightSuggestion(suggested);
+                if (hintEl) hintEl.textContent = 'Default: India';
+            });
+
+        function highlightSuggestion(region) {
+            btnIndia.classList.remove('suggested');
+            btnGlobal.classList.remove('suggested');
+            if (region === 'india') {
+                btnIndia.classList.add('suggested');
+            } else {
+                btnGlobal.classList.add('suggested');
+            }
+        }
+
+        function hideModal() {
+            modal.style.animation = 'regionFadeOut 0.3s ease forwards';
+            modal.querySelector('.region-modal-card').style.animation = 'none';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.style.animation = '';
+            }, 300);
+        }
+
+        function applyChoice(region) {
+            isINR = region === 'india';
+            updateCurrency();
+            hideModal();
+        }
+
+        btnIndia.addEventListener('click', () => applyChoice('india'));
+        btnGlobal.addEventListener('click', () => applyChoice('global'));
+
+        // ESC to dismiss — defaults to last saved state (India since no save yet)
+        modal.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                applyChoice('india');
+            }
+        });
+
+        // Show modal after loader (approx 2.2s)
+        setTimeout(() => {
+            modal.style.display = 'flex';
+            btnIndia.focus();
+        }, 2200);
+    }
+
+    initRegionModal();
 });
