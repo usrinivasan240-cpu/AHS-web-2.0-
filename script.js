@@ -536,25 +536,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Comparison tables: INDIA col always INR, GLOBAL col always USD.
-        // Package comparison row has only .tbl-price (no .tbl-price-usd sibling) -> toggles with region.
+        // Single PRICE column: show INR for India, USD for Global. No comparison.
         document.querySelectorAll('.tbl-price[data-inr]').forEach(el => {
-            const row = el.closest('tr');
-            const isComparisonPair = row && row.querySelector('.tbl-price-usd');
-            if (isComparisonPair) {
-                el.textContent = el.dataset.inr;
-            } else if (isINR) {
+            if (isINR) {
                 el.textContent = el.dataset.inr;
             } else {
                 const usd = el.dataset.usd || '';
                 el.textContent = usd.startsWith('$') ? usd : '$' + usd;
             }
-        });
-
-        // Update table prices - USD column always shows USD with $ symbol
-        document.querySelectorAll('.tbl-price-usd[data-inr]').forEach(el => {
-            const usd = el.dataset.usd || '';
-            el.textContent = usd.startsWith('$') ? usd : '$' + usd;
         });
 
         // Update payment thresholds
